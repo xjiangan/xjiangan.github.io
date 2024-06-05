@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Xudong Jiang</title>
+
+    <meta name="author" content="Xudong Jiang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Xudong Jiang
+                </p>
+                <p>
+                    I am a final-year MSc student in Computer Science at <a href="https://ethz.ch/en.html">ETH Zurich</a>.
+                  </p> 
+                  <p>
+                    Previously, I obtained my Bachelor degree in Computer Science and Mathematics at <a href="https://hkust.edu.hk">The Hong Kong University of Science and Technology</a> in 2022.
+                  </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="media/profile.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="media/profile.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I'm interested in computer vision and machine learning, especially in 3D vision.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+    <tr onmouseout="glace_stop()" onmouseover="glace_start()" bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='glace_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="media/glace/glace_recon_crop.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='media/glace/triangulation.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function glace_start() {
+            document.getElementById('glace_image').style.opacity = "1";
+          }
+
+          function glace_stop() {
+            document.getElementById('glace_image').style.opacity = "0";
+          }
+          glace_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://xjiangan.github.io/glace">
+			<span class="papertitle">GLACE: Global Local Accelerated Coordinate Encoding
+            </span>
+        </a>
+        <br>
+        <a href="https://fangjinhuawang.github.io/">Fangjinhua Wang</a>*,
+        <a href="https://xjiangan.github.io/">Xudong Jiang</a>*,
+        <a href="https://intanto.net/">Silvano Galliani</a>,
+        <a href="https://www.microsoft.com/en-us/research/people/chvogel/">Christoph Vogel</a>,
+        <a href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a>
+        <br>
+        <em>CVPR</em>, 2024
+        <br>
+        <a href="https://xjiangan.github.io/glace">project page</a>
+        /
+        <a href="https://xjiangan.github.io/glace">arXiv</a>
+        <p></p>
+        <p>
+            GLACE integrates pre-trained global and local encodings, enabling scene coordinate regression to scale to large scenes with only a single small-sized network.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="frr_stop()" onmouseover="frr_start()" >
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='frr_image'>
+                <img src='media/frr/0004_room2_0004_ab_T_pred.jpg' width="160">
+            </div>
+            <img src='media/frr/0004_room2_0004_ab.jpg' width="160">
+          </div>
+          <script type="text/javascript">
+            function frr_start() {
+              document.getElementById('frr_image').style.opacity = "1";
+            }
+  
+            function frr_stop() {
+              document.getElementById('frr_image').style.opacity = "0";
+            }
+            frr_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2211.02914">
+              <span class="papertitle">Robust Reflection Removal with Flash-only Cues in the Wild
+              </span>
+          </a>
+          <br>
+          <a href="https://chenyanglei.github.io/">Chenyang Lei</a>*,
+          <a href="https://xjiangan.github.io/">Xudong Jiang</a>*,
+          <a href="https://cqf.io/">Qifeng Chen</a>
+          <br>
+          <em>TPAMI</em>, 2023
+          <br>
+          <a href="https://arxiv.org/abs/2211.02914">arXiv</a>
+          /
+        <a href="https://github.com/ChenyangLEI/flash-reflection-removal">code</a> 
+          <p></p>
+          <p>
+              Estimate optical flow to align flash and non-flash pair for robust reflection removal in the wild. Monocular depth estimation is used to synthesise realistic misalignment in training.
+          </p>
+        </td>
+      </tr>
+
+
+
+          </tbody></table>
+
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                    Thank Dr. Jon Barron for sharing the <a href="https://github.com/jonbarron/jonbarron_website">source code</a> of his personal page.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

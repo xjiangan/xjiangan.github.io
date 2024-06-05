@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="GLACE: Global Local Accelerated Coordinate Encoding">
+  <meta name="keywords" content="GLACE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GLACE</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+
+
+
+  </script> -->
+
+<link rel="icon" type="image/png" href="media/glace/glace.png"> 
+<link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./media/glace/css/bulma.min.css">
+  <link rel="stylesheet" href="./media/glace/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./media/glace/css/bulma-slider.min.css">
+  <!-- <link rel="stylesheet" href="./media/glace/css/fontawesome.all.min.css"> -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./media/glace/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./media/glace/js/fontawesome.all.min.js"></script>
+  <script src="./media/glace/js/bulma-carousel.min.js"></script>
+  <script src="./media/glace/js/bulma-slider.min.js"></script>
+  <!-- <script src="./media/glace/js/index.js"></script> -->
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://xjiangan.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <!-- <a class="navbar-item" href="https://xjiangan.github.io/frr">
+            Robust Reflection Removal with Flash-only Cues in the Wild
+          </a> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><img src="media/glace/glace.png" width="90">GLACE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+          <h1 class="title is-2 publication-title">Global Local Accelerated Coordinate Encoding</h1>
+          <div class="column is-full_width">
+            <h2 class="title is-4">CVPR 2024</h2>
+          </div>
+          <!-- <br> -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://fangjinhuawang.github.io">Fangjinhua Wang</a><sup>1 *</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://xjiangan.github.io">Xudong Jiang</a><sup>1 *</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block">
+              <a href="https://intanto.net">Silvano Galliani</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://www.microsoft.com/en-us/research/people/chvogel/">Christoph Vogel</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a><sup>1,2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+          </div>
+          <div class="column is-full_width">
+            <h2 class="is-size-6">* Equal Contribution</h2>
+            <!-- <h2 class="is-size-6">(* equal contribution)  (<span>&#8224;</span> corresponding author)</h2> -->
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>ETH Zurich</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>Microsoft Mixed Reality & AI Zurich Lab</span>&nbsp;&nbsp;
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://xjiangan.github.io" target="_blank"
+                   class="button is-normal is-rounded is-dark">
+                <!-- <a href="https://arxiv.org/abs/2112.12130" target="_blank"
+                   class="button is-normal is-rounded is-dark"> -->
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/euC3k7ArEO0"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Poster Link. -->
+              <!-- <span class="link-block">
+                <a href="media/glace/poster_glace.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-palette"></i>
+                  </span>
+                  <span>Poster</span>
+                  </a>
+              </span> -->
+              <!-- Code Link. -->
+               <span class="link-block">
+                <a href="https://github.com/cvg/glace" target="_blank"
+		   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span >Code</span>
+                  </a>
+              </span> 
+            </div>
+
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+        <!-- Paper video. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Video</h2>
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/euC3k7ArEO0?rel=0&amp;showinfo=0"
+                      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <!--/ Paper video. -->
+
+    <br>
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>TL;DR: GLACE integrates pre-trained global and local encodings, enabling scene coordinate regression to scale to large scenes with only a single small-sized network.</b>
+          </p>
+          <p>
+            Scene coordinate regression (SCR) methods are a family of visual localization methods that directly regress 2D-3D matches for camera pose estimation. 
+            They are effective in small-scale scenes but face significant challenges in large-scale scenes that are further amplified in the absence of ground truth 3D point clouds for supervision. 
+            Here, the model can only rely on reprojection constraints and needs to implicitly triangulate the points.
+            The challenges stem from a fundamental dilemma:
+            The network has to be invariant to observations of 
+            the same landmark at different viewpoints and lighting conditions, etc., 
+            but at the same time discriminate unrelated but similar observations. 
+            The latter becomes more relevant and severe in larger scenes. 
+            In this work, we tackle this problem by introducing the concept of co-visibility to the network.
+            We propose GLACE, which integrates pre-trained global and local encodings and enables SCR to scale to large scenes with only a single small-sized network.
+            Specifically, we propose a novel feature diffusion technique that implicitly groups the reprojection constraints with co-visibility and avoids overfitting to trivial solutions. Additionally, our position decoder parameterizes the output positions for large-scale scenes more effectively. Without using 3D models or depth maps for supervision, our method achieves state-of-the-art results on large-scale scenes with a low-map-size model. On Cambridge landmarks, with a single model, we achieve 17% lower median position error than Poker, the ensemble variant of the state-of-the-art SCR method ACE. Code is available at: <a href="https://github.com/cvg/glace" >https://github.com/cvg/glace</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full_width">
+        <hr>
+        <h2 class="title is-3">Method</h2>
+        <br>
+        <img src="media/glace/pipeline.png" class="center"/>
+        <div class="content has-text-justified">
+          <br>  
+          <p>
+            Pipleine of <strong>GLACE</strong>: Besides the buffer of <a href="https://nianticlabs.github.io/ace">ACE</a> local encodings, we extract global features of training images with image retrieval model <a href="https://github.com/bytedance/R2Former">R2Former</a>. During training, we sample a batch of local encodings, look up their global encoding according to their image index and perform feature diffusion by adding Gaussian noise. The global and local encodings are concatenated as input to an MLP head. The output of the MLP is further processed by a position decoder to yield the final coordinate predictions. The global encoding with feature diffusion facilitates the grouping of reprojection constraints, enabling effective implicit triangulation in large-scale scenes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full_width">
+        <hr>
+        <h3 class="title is-4">SCR method cannot scale?</h3>
+        <br>
+        <div class="columns is-centered">
+          <!-- Wheel -->
+          <div class="column">
+            <div class="content" center>
+              <h2 class="title is-5 has-text-centered">ACE (27MB)</h2>
+            </div>
+          </div>
+    
+          <!-- Wheel -->
+          <div class="column">
+            <div class="content" center>
+              <h2 class="title is-5 has-text-centered">GLACE (27MB)</h2>
+            </div>
+          </div>
+        </div>
+        
+
+        <video id="dollyzoom" autoplay controls muted loop height="100%">
+          <source src="media/glace/ace_glace.mp4"
+                  type="video/mp4">
+        </video>
+        <div class="content has-text-justified">
+          <br>  
+          <p>
+            Simply using a larger network struggles to represent large areas. Existing methods split the scenes into small areas, which is less compact and may lead to suboptimal performance. 
+      GLACE allows us to accurately localize in large areas with a single network.
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full_width">
+        <hr>
+        <h3 class="title is-4">SCR as implicit triangulation</h3>
+        <br>
+
+        <div class="columns is-vcentered">
+          <div class="column">
+            <img src="media/glace/point1.png" class="center"/>
+          </div>
+          <div class="column">
+            <video id="dollyzoom" autoplay controls muted loop height="100%">
+              <source src="media/glace/1point.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+
+     
+        <div class="content has-text-justified">
+          <br>  
+          <p>
+            In SCR, each 2D observation independently regresses to a 3D point, the reprojection constraints might seem under-determined. Without Ground truth 3D supervision, why reprojection loss allows the network to learn meaningful 3D reconstruction? We argue that the smoothness prior of the neural network implicitly groups the reprojection constraints of similar input, which triangulate their output points. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full_width">
+        <h3 class="title is-4">Challenges in Large Scenes</h3>
+        <br>
+
+        <div class="columns is-vcentered">
+          <div class="column">
+            <img src="media/glace/point2.png" class="center"/>
+          </div>
+          <div class="column">
+            <video id="dollyzoom" autoplay controls muted loop height="100%">
+              <source src="media/glace/ace_tri.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+
+     
+        <div class="content has-text-justified">
+          <br>  
+          <p>
+            However, in large scenes, unrelated yet visually similar observations exist. Robust loss can only mitigate the problem by triangulating only one of the 3D points and treating others as outliers. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full_width">
+        <h3 class="title is-4">Global encoding</h3>
+        <br>
+
+        <div class="columns is-vcentered">
+          <div class="column">
+            <img src="media/glace/point2.png" class="center"/>
+          </div>
+          <div class="column">
+            <video id="dollyzoom" autoplay controls muted loop height="100%">
+              <source src="media/glace/glace0g_tri.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+
+     
+        <div class="content has-text-justified">
+          <br>  
+          <p>
+            Introducing global encoding from a pretrained image retrieval network resolves the global ambiguity. However, different views of the same point have distinct global encodings, leading to overfitting by placing arbitrary points along the ray instead of implicitly triangulating the 3D point.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full_width">
+        <h3 class="title is-4">Feature Diffusion</h3>
+        <br>
+
+        <div class="columns is-vcentered">
+          <div class="column">
+            <img src="media/glace/point2.png" class="center"/>
+          </div>
+          <div class="column">
+            <video id="dollyzoom" autoplay controls muted loop height="100%">
+              <source src="media/glace/glace_tri.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+
+     
+        <div class="content has-text-justified">
+          <br>  
+          <p>
+            We propose a feature diffusion technique that simply adds Gaussian noise to the global encoding. This adjusts the strength of the smoothness prior on the global encoding and prevents the network from distinguishing covisible pairs while still resolving global ambiguity in non-covisible pairs. This can also be regarded as a kind of feature metric data augmentation. Unlike K-Means, feature diffusion requires no scene-specific hyperparameters.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+        <div class="column is-full_width">
+          <hr>
+        <h3 class="title is-4">Position Decoder</h3>
+        <br>
+        <img src="media/glace/decoder.png" class="center" width="80%"/>
+        
+        <video id="dollyzoom" autoplay controls muted loop height="100%">
+          <source src="media/glace/glace1c50c.mp4"
+                  type="video/mp4">
+        </video>
+
+
+     
+        <div class="content has-text-justified">
+          <br>  
+          <p>
+            Despite improvements, the network still only well represents the scene near the center. We propose a novel position decoder that replaces the single mean with a weighted average of cluster centers, better parameterizing the multimodal output distribution.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+   
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{GLACE2024CVPR,
+      author    = {Fangjinhua Wang and Xudong Jiang and Silvano Galliani and Christoph Vogel and Marc Pollefeys},
+      title     = {GLACE: Global Local Accelerated Coordinate Encoding},
+      booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+      month     = {June},
+      year      = {2024}
+  }</code></pre>
+  </div>
+</section>
+
+<section class="section" id="Acknowledgements">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgements</h2>
+    The thumb-up logo was created by <a href="https://www.flaticon.com/free-icon/like_1392115?term=great&page=1&position=9&page=1&position=9&related_id=1392115&origin=tag" title="great icons">Freepik - Flaticon</a>.
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. 
+            We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template.
+          </p>
+        </div>
+      </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
