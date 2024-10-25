@@ -89,7 +89,7 @@
         </a>
         <br>
         <a href="https://fangjinhuawang.github.io/">Fangjinhua Wang</a>*,
-        <a href="https://xjiangan.github.io/">Xudong Jiang</a>*,
+        <strong><a href="https://xjiangan.github.io/">Xudong Jiang</a>*</strong>,
         <a href="https://intanto.net/">Silvano Galliani</a>,
         <a href="https://www.microsoft.com/en-us/research/people/chvogel/">Christoph Vogel</a>,
         <a href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a>
@@ -101,6 +101,8 @@
         <a href="https://arxiv.org/abs/2406.04340">arXiv</a>
 	/
 	<a href="https://github.com/cvg/glace">code</a>  
+  /
+  <a href="https://youtu.be/euC3k7ArEO0">video</a>
         <p></p>
         <p>
             GLACE integrates pre-trained global and local encodings, enabling scene coordinate regression to scale to large scenes with only a single small-sized network.
@@ -134,7 +136,7 @@
           </a>
           <br>
           <a href="https://chenyanglei.github.io/">Chenyang Lei</a>*,
-          <a href="https://xjiangan.github.io/">Xudong Jiang</a>*,
+          <strong><a href="https://xjiangan.github.io/">Xudong Jiang</a>*</strong>,
           <a href="https://cqf.io/">Qifeng Chen</a>
           <br>
           <em>TPAMI</em>, 2023
@@ -175,9 +177,9 @@
               <td style="padding:20px;width:75%;vertical-align:middle">
               <span class="papertitle">Parallelization of Polybench Kernels: symm and gemver </span>
                 <br>
-                <em>ETH 263-2800-00 S: Design of Parallel and High-Performance Computing</em>
+                <em>Course project of Design of Parallel and High-Performance Computing</em>
                 <br>
-                Autumn Semester 2023
+                Autumn 2023, ETH Zurich
                 <br>
                 <a href="media/projects/DPHPC_Report.pdf">report</a>  
                 <p>
@@ -186,10 +188,175 @@
                 </p>
               </td>
             </tr>
+
+
+
+
+
+
+
         
                   </tbody></table>
+
+                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+                    <tr onmouseout="mesh_stop()" onmouseover="mesh_start()" >
+                      <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                          <div class="two" id='mesh_image'><video  width=100% height=100% muted autoplay loop>
+                            <source src="media/projects/mesh_avatar-clip.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video></div>
+                          <img src='media/projects/mesh_cross.png' width="160">
+                        </div>
+                        <script type="text/javascript">
+                          function mesh_start() {
+                            document.getElementById('mesh_image').style.opacity = "1";
+                          }
+                
+                          function mesh_stop() {
+                            document.getElementById('mesh_image').style.opacity = "0";
+                          }
+                          mesh_stop()
+                        </script>
+                      </td>
+                      <td style="padding:20px;width:75%;vertical-align:middle">
+                      <span class="papertitle">Explicit Representation for Human Reconstruction </span>
+                        <br>
+                        <em>Student project at AIT Lab</em>
+                        <br>
+                        Summer 2023, ETH Zurich
+                        <br>
+                        <p>
+                          Refine coarse mesh with variational refinement. Optimize integration of photoconsistency cost under silhouette constraints with 
+                          efficient GPU Monte Carlo integration on sparse voxels around the mesh.
+                        </p>
+                      </td>
+                    </tr>
+                
+                          </tbody></table>
         
-          
+
+                          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+                            <tr onmouseout="nerfh_stop()" onmouseover="nerfh_start()" >
+                              <td style="padding:20px;width:25%;vertical-align:middle">
+                                <div class="one">
+                                  <div class="two" id='nerfh_image'><video  width=100% height=100% muted autoplay loop>
+                                    <source src="media/projects/nerf_avatar-clip.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                    </video></div>
+                                  <img src='media/projects/mesh_carve.png' width="160">
+                                </div>
+                                <script type="text/javascript">
+                                  function nerfh_start() {
+                                    document.getElementById('nerfh_image').style.opacity = "1";
+                                  }
+                        
+                                  function nerfh_stop() {
+                                    document.getElementById('nerfh_image').style.opacity = "0";
+                                  }
+                                  nerfh_stop()
+                                </script>
+                              </td>
+                              <td style="padding:20px;width:75%;vertical-align:middle">
+                              <span class="papertitle">Implicit Representation for Human Reconstruction </span>
+                                <br>
+                                <em>Course project of Machine Perception</em>
+                                <br>
+                                Spring 2023, ETH Zurich
+                                <br>
+                                <p>
+                                   Fast human reconstruction with implicit representation (Ranked top 3 in class).
+                                   Utilize silhouette carving, depth prior, and importance sampling for fast and accurate reconstruction.
+                                   Extract mesh with low bias by depth rendering and TSDF fusion
+                                </p>
+                              </td>
+                            </tr>
+                        
+                                  </tbody></table>
+                
+        
+
+                                          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+                                            <tr onmouseout="pbd_stop()" onmouseover="pbd_start()" >
+                                              <td style="padding:20px;width:25%;vertical-align:middle">
+                                                <div class="one">
+                                                  <div class="two" id='pbd_image'><video  width=160  muted autoplay loop>
+                                                    <source src="media/projects/pbd-2f2s.mp4" type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                                    </video></div>
+                                                  <img src='media/projects/pbd-2f2s.jpg' width="160">
+                                                </div>
+                                                <script type="text/javascript">
+                                                  function pbd_start() {
+                                                    document.getElementById('pbd_image').style.opacity = "1";
+                                                  }
+                                        
+                                                  function pbd_stop() {
+                                                    document.getElementById('pbd_image').style.opacity = "0";
+                                                  }
+                                                  pbd_stop()
+                                                </script>
+                                              </td>
+                                              <td style="padding:20px;width:75%;vertical-align:middle">
+                                              <span class="papertitle">Real-time Position Based Fluid Simulation </span>
+                                                <br>
+                                                <em>Course project of Physically-Based Simulation in Computer Graphics</em>
+                                                <br>
+                                                Autumn 2022, ETH Zurich
+                                                <br>
+                                                <p>
+                                                  Implemented Position Based Fluid Simulation with Taichi. Simulate multi-phase fluid and fluid-solid interactions with 20k particles in real-time on RTX3080Ti.
+                                                </p>
+                                              </td>
+                                            </tr>
+                                        
+                                                  </tbody></table>
+                                                  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+                                                    <tr onmouseout="ebdt_stop()" onmouseover="ebdt_start()" >
+                                                      <td style="padding:20px;width:25%;vertical-align:middle">
+                                                        <div class="one">
+                                                          <div class="two" id='ebdt_image'><video  width=160  muted autoplay loop>
+                                                            <source src="media/projects/everybody_dance.mp4" type="video/mp4">
+                                                            Your browser does not support the video tag.
+                                                            </video></div>
+                                                          <img src='media/projects/dance_train.png' width="160">
+                                                        </div>
+                                                        <script type="text/javascript">
+                                                          function ebdt_start() {
+                                                            document.getElementById('ebdt_image').style.opacity = "1";
+                                                          }
+                                                
+                                                          function ebdt_stop() {
+                                                            document.getElementById('ebdt_image').style.opacity = "0";
+                                                          }
+                                                          ebdt_stop()
+                                                        </script>
+                                                      </td>
+                                                      <td style="padding:20px;width:75%;vertical-align:middle">
+                                                        <span class="papertitle">Everybody Dance Together: Multi-person Motion Transfer </span>
+                                                        <br>
+                                                        <em>Final Year Project</em>
+                                                        <br>
+                                                        2022, HKUST
+                                                        <br>
+                                                        <p>
+                                                          Multi-person motion transfer by generating masked videos and alpha compositing them. Utilized coarse masks to reconstruct the background and obtain fine masks with background matting.
+                                                        </p>
+                                                      </td>
+                                                    </tr>
+                                                
+                                                          </tbody></table>
+                
+                
+                  
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">
